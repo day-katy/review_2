@@ -26,11 +26,6 @@ Input | Output
 ```
 [10, 20, 30, 40, 50, 60], 25, 45 => [25, 25, 30, 40, 45, 45]
 
-
-<!-- TEST SIMPLEST ELEMENT FIRST -> then wouldn't have to iterate over an array!
-[40], 40, 1000 => [40] -->
-
-
 [40, 50, 60, 1000], 40, 1000 => [40, 50, 60, 1000]
 [30, 50, 60, 1000], 40, 1000 => [40, 50, 60, 1000]
 [40, 50, 60, 1100], 40, 1000 => [40, 50, 60, 1000]
@@ -42,3 +37,6 @@ Input | Output
 
 [40, 50, 60, nil] 25, 45 => error "The input is corrupted"
 ```
+
+<!-- TEST SIMPLEST ELEMENT FIRST -> then wouldn't have to iterate over an array!
+[40], 40, 1000 => [40] -->
