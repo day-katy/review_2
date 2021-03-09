@@ -20,6 +20,10 @@ describe "when given a track array" do
     expect(band_pass_filter([30, 50,60, 1100], 40, 1000)).to eq [40, 50, 60, 1000]
   end
 
+  it "gives default filters of 40 and 1000 when no filters are provided" do
+    expect(band_pass_filter([30, 50,60, 1100])).to eq [40, 50, 60, 1000]
+  end
+
 end
 
 

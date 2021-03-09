@@ -1,5 +1,5 @@
 
-def band_pass_filter(track, lower, upper)
+def band_pass_filter(track, lower = 40, upper = 1000)
   updated_track = []
   track.each do |freq|
     if freq < lower 
