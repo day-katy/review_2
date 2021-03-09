@@ -24,6 +24,10 @@ describe "when given a track array" do
     expect(band_pass_filter([30, 50,60, 1100])).to eq [40, 50, 60, 1000]
   end
 
+  it "raises an error if any of the input is nil" do
+    expect(band_pass_filter([40, 50,60, nil])).to eq "The input is corrupted"
+  end
+
 end
 
 
